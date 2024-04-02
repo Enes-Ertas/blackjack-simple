@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="title">
+      <h1 id="game-title">Blackjack Game</h1>
+    </div>
+    <div class="dealer-container">
+      <img
+        class="card"
+        id="hidden-card"
+        src="./assets/BACK.png"
+        width="100px"
+        height="175px"
+      />
+    </div>
+    <div class="dealer-points-container">
+      <p id="dealer" class="game-item">
+        Dealer Points: <span id="dealer-points"></span>
+      </p>
+    </div>
+    <div class="player-container"></div>
+    <div class="pre-game">
+      <button class="button" id="play-game" type="button">Play Game</button>
+      <button class="button game-item" id="hit" type="button">Hit</button>
+      <button class="button game-item" id="stay" type="button">Stay</button>
+    </div>
+    <div class="player-points-container">
+      <p id="player" class="game-item">
+        Player Points: <span id="player-points"></span>
+      </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
